@@ -8,14 +8,20 @@ body
 
 main
   width: 100%
-  height: auto
+  min-height: 100%
   background-color: orange
 
 a
   text-decoration: none
   color: inherit
-  &:hover
-    text-decoration: underline
+
+.meta
+  span
+    border-radius: 3px
+    padding: 5px 15px
+    color: white
+    background-color: #5E7CE7
+    font-size: 14px
 
 section
   width: 100%
@@ -24,10 +30,10 @@ section
   align-items: center
 
 .first-part
-  background: url(backgrounds/38.jpg)
+  background: url(backgrounds/cranes.jpg)
 
 .second-part
-  background: url(backgrounds/depositphotos_25066971-stock-illustration-seamless-pattern-can-be-used.jpg)
+  background: url(backgrounds/1.jpg)
 
 .first-part__container
   width: 800px
@@ -44,6 +50,8 @@ header
   height: 100px
   border-bottom: darkblue 5px solid
   justify-content: center
+  a:hover
+    text-decoration: underline
   ul
     list-style-type: none
     display: flex
@@ -98,16 +106,59 @@ header
   justify-content: space-between
 
 .region__elem
+  color: white
+  display: flex
+  flex-direction: column
+  justify-items: center
   margin-top: 10px
-  width: 390px
+  padding-left: 10px
+  padding-right: 10px
+  width: 370px
   height: 200px
   background-image: url(images/pristro.jpg)
   background-size: cover
   background-position: center
+  p
+    font-size: 20px
+    color: white
+    text-transform: uppercase
+    margin-top: 2px
+    transition: all 1s
+
+  .main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    transition: all 1s
+    .meta
+      margin-bottom: 0
+      span
+        font-size: 10px
+  &:hover
+    p
+      margin-top: 10px
+    .main
+      display: flex
+      flex-direction: column
+      height: 50%
+      border-bottom: white 2px solid
+    .hidden
+      display: flex
+      flex-direction: column
+      justify-content: center
+      height: 50%
+      opacity: 1
+
+.hidden
+  opacity: 0
+  height: 0
+  transition: all 1s
+  pointer-events: none
 
 
 .region__elem__last
-  width: 800px
+  width: 780px
   border-bottom: 5px darkblue solid
 
 .about
@@ -120,11 +171,30 @@ header
 
 .about__content
   width: 60%
-  background-color: blueviolet
+  background-color: transparent
 
 .about__slider
   width: 37%
-  background-color: aqua
+  background-color: transparent
+  .image
+    position: relative
+    width: 100%
+    height: 100%
+  p
+    position: relative
+    text-align: center
+    top: -180px
+    width: 100%
+    text-transform: uppercase
+    font-size: 23px
+  .border
+    position: relative
+    top: -341px
+    width: 288px
+    height: 188px
+    left: 2px
+    border: white 2px solid
+
 
 .news
   margin-top: 20px
@@ -134,18 +204,20 @@ header
 
 .news__block
   width: 250px
-  height: 200px
-  background-color: black
+  height: 350px
+  background-color: transparent
   display: flex
   flex-direction: column
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 .news__image
-  height: 60%
+  height: 64%
   background-color: gold
   border-bottom: darkblue 2px solid
+
 .news__content
-  height: 39%
-  background-color: chartreuse
+  height: 35%
+  background: transparent
 
 .programs
   margin-top: 20px
@@ -155,8 +227,32 @@ header
 
 .programs__block
   width: 390px
-  height: 150px
+  height: 200px
   background-color: grey
+
+  .image
+    position: relative
+  p
+    position: relative
+    top: -200px
+    text-align: center
+    text-transform: uppercase
+    text-decoration: none
+    color: #fff
+    font-size: 25px
+  .box
+    opacity: 0
+    transition: all 1s
+  &:hover
+    .box
+      position: relative
+      border: white 2px solid
+      box-sizing: border-box
+      width: 97%
+      height: 95%
+      top: -385px
+      left: 6px
+      opacity: 1
 
 footer
   display: flex
@@ -193,7 +289,7 @@ footer
     p
       color: #656D79
 .footer-bottom__left-block
-  padding-left: 0px
+  padding-left: 0
 
 .footer-bottom__right-block
   text-align: right
@@ -204,3 +300,16 @@ footer
   font-weight: bolder
   color: white
   font-size: 22px
+
+.image
+  position: relative
+  width: 100%
+  height: 100%
+
+.region__info__left
+  margin-right: 50px
+
+.elem1
+  font-size: 10px
+  font-weight: bold
+  color: #C2CDEC

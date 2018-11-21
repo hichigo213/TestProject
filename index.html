@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Тестовое задание</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -43,18 +47,96 @@
         </div>
         <div class="logo"></div>
     </header>
+
     <main>
+
         <section class="first-part">
             <div class="first-part__container">
                 <div class="region">
-                    <a href="#"><div class = "region__elem"></div></a>
-                    <a href="#"><div class = "region__elem" ></div></a>
-                    <a href="#"><div class = "region__elem"></div></a>
-                    <a href="#"><div class = "region__elem"></div></a>
-                    <a href="#"><div class = "region__elem region__elem__last"></div></a>
+
+                    <a href="#">
+                    <div class = "region__elem">
+                        <div class="main">
+                            <p class="meta"><span>район</span></p>
+                            <p>8-й Квартал</p>
+                        </div>
+                        <div class="hidden">
+                            <p>
+                                <span class="region__info__left">>90 <span class="elem1">домов</span></span>
+                                <span class="region__info_right">>10 000 <span class="elem1">жителей</span></span>
+                            </p>
+                            <p class="region_date">Сроки строительства 2014-2016</p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="#">
+                    <div class = "region__elem" >
+                        <div class="main">
+                            <p class="meta"><span>район</span></p>
+                            <p>Центральный</p>
+                        </div>
+                        <div class="hidden">
+                            <p>
+                                <span class="region__info__left">>90 <span class="elem1">домов</span></span>
+                                <span class="region__info_right">>10 000 <span class="elem1">жителей</span></span>
+                            </p>
+                            <p class="region_date">Сроки строительства 2014-2016</p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="#">
+                    <div class = "region__elem">
+                        <div class="main">
+                            <p class="meta"><span>район</span></p>
+                            <p>восьмой квартал</p>
+                        </div>
+                        <div class="hidden">
+                            <p>
+                                <span class="region__info__left">>90 <span class="elem1">домов</span></span>
+                                <span class="region__info_right">>10 000 <span class="elem1">жителей</span></span>
+                            </p>
+                            <p class="region_date">Сроки строительства 2014-2016</p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="#">
+                    <div class = "region__elem">
+                        <div class="main">
+                            <p class="meta"><span>район</span></p>
+                            <p>г. дмитровоград</p>
+                        </div>
+                        <div class="hidden">
+                            <p>
+                            <span class="region__info__left">>90 <span class="elem1">домов</span></span>
+                            <span class="region__info_right">>10 000 <span class="elem1">жителей</span></span>
+                            </p>
+                            <p class="region_date">Сроки строительства 2014-2016</p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="#">
+                    <div class = "region__elem region__elem__last">
+                        <div class="main">
+                            <p class="meta"><span>район</span></p>
+                            <p>эталон</p>
+                        </div>
+                        <div class="hidden">
+                            <p>
+                                <span class="region__info__left">>90 <span class="elem1">домов</span></span>
+                                <span class="region__info_right">>10 000 <span class="elem1">жителей</span></span>
+                            </p>
+                            <p class="region_date">Сроки строительства 2014-2016</p>
+                        </div>
+                    </div>
+                    </a>
                 </div>
             </div>
         </section>
+
         <section class="second-part">
             <div class="second-part__container">
                 <h3>О НАС</h3>
@@ -64,30 +146,76 @@
 
                             Созданная в 2007 году инвестиционно-строительная компания «Запад» первой среди застройщиков г. Ульяновска выбрала путь по-настоящему комплексного освоения территории. Причем речь идет не только о возведении жилых массивов, но и всей необходимой для жизни социальной и коммерческой инфраструктуры: школах, детских садах, магазинах, медицинских и культурных учреждениях.</p>
                     </div>
-                    <div class="about__slider"></div>
+                    <div class="about__slider">
+                        <div class="slide">
+                            <img src="css/images/5.jpg" class="image">
+                            <p class="meta"><span>Акция</span></p>
+                            <p>Квартиры <br> В Собственность</p>
+                            <div class="border"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="css/images/5.jpg" class="image">
+                            <p class="meta"><span>Акция</span></p>
+                            <p>Квартира <br> в Собственность</p>
+                            <div class="border"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="css/images/5.jpg" class="image">
+                            <p class="meta"><span>Акция</span></p>
+                            <p>Квартира <br> в Собственность</p>
+                            <div class="border"></div>
+                        </div>
+                    </div>
                 </div>
                 <h3>НОВОСТИ</h3>
                 <div class="news">
                     <a href="#"><div class="news__block">
-                        <div class="news__image"></div>
-                        <div class="news__content"></div>
+                        <div class="news__image">
+                            <img src="css/images/nar_edinstvo%5B1427%5D.jpg" alt="" class="image">
+                        </div>
+                        
+                        <div class="news__content">
+                            
+                        </div>
                     </div></a>
                     <a href="#"><div class="news__block">
-                        <div class="news__image"></div>
-                        <div class="news__content"></div>
+                        
+                        <div class="news__image">
+                            <img src="css/images/nar_edinstvo%5B1427%5D.jpg" alt="" class="image">
+                        </div>
+                        
+                        <div class="news__content">
+                            
+                        </div>
                     </div></a>
                     <a href="#"><div class="news__block">
-                        <div class="news__image"></div>
-                        <div class="news__content"></div>
+                        <div class="news__image">
+                            <img src="css/images/nar_edinstvo%5B1427%5D.jpg" alt="" class="image">
+                        </div>
+                        
+                        <div class="news__content">
+                            
+                        </div>
                     </div></a>
                 </div>
                 <div class="programs">
-                    <a href=""><div class="programs__block"></div></a>
-                    <a href=""><div class="programs__block"></div></a>
+                    <a href=""><div class="programs__block">
+                        <img src="css/images/DSC_2844.JPG" alt="" class="image">
+                        <p class="meta"><span>Программа</span></p>
+                        <p>Военная<br>ипотека<br>на новостройку</p>
+                        <div class="box"></div>
+                    </div></a>
+                    <a href=""><div class="programs__block">
+                        <img src="css/images/DSC_2844.JPG" alt="" class="image">
+                        <p class="meta"><span>Программа</span></p>
+                        <p>Военная<br>ипотека<br>на новостройку</p>
+                        <div class="box"></div>
+                    </div></a>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer__block" >
@@ -127,5 +255,6 @@
             <div><p>Дизайн и проектирование</p></div>
         </div>
     </footer>
+    <script src="js/slider.js" type="text/javascript"></script>
 </body>
 </html>
